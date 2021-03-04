@@ -1,0 +1,50 @@
+/*////ROOT////*/
+* {
+    color: white;
+}
+/*////Style////*/
+//light body style
+.body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #00ccff 0%, #00aaff 10%, #0066ff 30%, #0066ff 70%, #00aaff 90%, #00ccff 100%);
+    //dark mode btn
+    .darkBtn{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        .toggle{
+            height: 100%;
+            width: 100%;
+            transition: .25s ease-in-out;
+        }
+        .frame{
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            top: 20px;
+            left: 0;
+            background: #0066FF;
+        }
+    }
+    //main content
+}
+//dark body style
+.dark {
+    background: linear-gradient(45deg, #004050 0%, #003550 10%, #002050 30%, #002050 70%, #003550 90%, #004050 100%);
+    //dark mode btn
+    .darkBtn{
+        .toggle{
+            transform: rotate(180deg);
+        }
+        .frame{
+            background: #002050;
+        }
+    }
+    //dark main content
+}
